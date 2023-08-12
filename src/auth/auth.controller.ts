@@ -12,6 +12,6 @@ export class AuthController {
     //return this.authService.validateUser(loginDTO.email, loginDTO.password);
     // console.log(req);
     // return req.user;
-    return this.authService.signIn(req.user.email, req.user.password);
+    return this.authService.login(req.user);
   }
 }
